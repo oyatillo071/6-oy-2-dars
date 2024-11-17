@@ -1,0 +1,32 @@
+.cars {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  background-color: aqua;
+  border-radius: 8px;
+}
+
+.cars-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.cars-list-items {
+  position: relative;
+}
+.cars-list-items::after {
+  content: "";
+  width: 10px;
+  aspect-ratio: 1;
+  background-color: orange;
+  left: -15px;
+  top: 2px;
+  border-radius: 50%;
+  position: absolute;
+}

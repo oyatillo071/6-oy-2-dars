@@ -1,0 +1,36 @@
+.address {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.address {
+  padding: 2px 30px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: rgb(255, 97, 40);
+}
+.address-title {
+  font-weight: 500;
+  list-style: none;
+}
+.address-item::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  top: 9px;
+  left: -20px;
+  background-color: blue;
+}
+.address-item {
+  list-style: none;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
